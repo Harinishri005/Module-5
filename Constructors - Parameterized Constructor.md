@@ -1,32 +1,57 @@
 # Exp.No:21  
-## Constructors - Parameterized Constructor
-
----
+## Constructors -Non-Parameterized Constructor
 
 ### AIM  
-To write a Python code to create a class for a person with a parameterized constructor, which will take the `name` and `userid` of the person as parameters and print the `userid` of the person.
-
----
+To write a python code to create a student class with  default constructor  and a user defined function to display the text "welcome" with student name given to the function.
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Define a `person` class.  
-3. The `person` class should have a parameterized `__init__` method that accepts two parameters: `name` and `userid`.  
-4. Inside the `__init__` method, assign the `name` to `self.name` and the `userid` to `self.userid`.  
-5. Print the `self.userid`.  
-6. Prompt the user to enter their `name` (string) and `userid`.  
-7. Create an instance `s1` of the `person` class by passing the entered `name` and `userid` to the constructor.  
-8. Terminate the program.
+1.Start the program.
 
----
+2.Define a class Student with a default constructor __init__() that does nothing (using pass).
+
+3.Create a method display_welcome(self, name) that takes a name and prints "Welcome" with that name.
+
+4.Create an object of the Student class.
+
+5.Call the display_welcome() method using the object and pass a student name.
+
+6.End.
+
 
 ### PROGRAM
+# REG NO:212223090008
+# NAME:Harinishri S
 
 ```
+class Name:
+    def __init__(self,name):
+        self.name = name
+        
+    def display(self):
+        print("Hello "+ self.name)
+
+name = input()
+s = Name(name)
+print("This is non parametrized constructor")
+s.display()
 
 ```
 
 ### OUTPUT
 
+
+![constructor](https://github.com/user-attachments/assets/746dce0a-cb03-4bfa-b1fb-ebbbb9d3194f)
+
+
 ### RESULT
+The program demonstrates how to define a class with a default constructor and a user-defined method. It successfully displays a personalized welcome message using the student’s name.
+
+
+
+
+
+
+
+
+
